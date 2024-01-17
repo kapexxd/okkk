@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Mono&display=swap");
+
+h2,
+p,
+h3,
+ul,
+ol {
+  margin: 0;
+  text-align: left;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.5s ease-in-out;
+  background-color: #4b4b4b72;
+}
+
+.carSmall {
+  height: 100px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carSmall:hover {
+  transform: scale(1.4);
+}
+
+.background {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+nav,
+section,
+footer {
+  margin: 20px;
+  padding: 20px;
+  border: 3px solid #fff;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 3px solid #fff;
+  z-index: 1;
+  margin: 0 20px;
+}
+
+header h1 {
+  margin: 0 auto;
+}
+
+.carsListBig {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#carlist {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50%;
+}
+
+.carsListItem {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#kautkas {
+  width: 50%;
+  height: 200px;
+}
+#kautkasparent {
+  display: flex;
+}
+.carsListItem h2 {
+  margin-right: 30px;
+}
+
+.carsListItemName {
+  padding-left: 20px;
+}
+
+.no-decoration {
+  text-decoration: none;
+  color: black;
+  width: fit-content;
+}
+
+@media print {
+  header,
+  footer,
+  form div {
+    display: none;
+  }
+  .carsListItem {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+}
+
+section h2 {
+  float: inline-end;
+  margin-bottom: 18px;
+}
+
+.enlarged-container {
+  display: none;
+  position: absolute;
+  top: 180px;
+  left: 55%;
+  z-index: 1000;
+  width: 600px;
+}
+
+.enlarged-info {
+  text-align: center;
+  padding: 10px;
+  background-color: #4b4b4b59;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  border: 2px solid black;
+}
+
+#submit {
+  width: 500px;
+}
+
+#questions {
+  display: flex;
+}
